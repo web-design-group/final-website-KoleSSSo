@@ -162,10 +162,12 @@ header button:active::after {
     padding: 1.5rem 4rem 1.5rem 4rem;
     width: fit-content;
     margin: 0 auto;
+    text-decoration: none;
     font-family: "Kyiv*Type Serif", "Transforma Mix_Trial", monospace; 
     color: var(--bg-clr);
     font-weight: 350;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 
@@ -173,6 +175,8 @@ header button:active::after {
     text-decoration: underline;
     text-decoration-color: var(--bg-clr);
     background-color: var(--button-hover);
+    font-family: "Kyiv*Type Serif", "Transforma Mix_Trial", monospace; 
+    color: var(--bg-clr);
 }
 
 .rent-btn:active {
