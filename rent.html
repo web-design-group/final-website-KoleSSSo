@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фронтир - бронирование</title>
+    <meta name="description" content="Фронтир">
+    <meta name="keywords" content="фронтир, антикафе, настольные игры, комнаты, бронирование">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/rent.css">
+    <script src="src/js/slider.js" defer> </script>
+    <script src="src/js/menu.js" defer></script>
+    <script src="src/js/custom-calendar-wrapper.js" defer> </script>
+    <script src="src/js/custom-select-wrapper.js" defer> </script>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <button>
+                <img src="src/img/main-img/logo.svg" alt="Фронтир логотип" height="50" width="50">
+            </button>
+            <h2>
+                Фронтир
+            </h2>
+        </div>
+        <div id="nav-container">
+            <button>
+                <img src="src/img/main-img/navbar.svg" alt="Кнопка меню" height="50" width="50">
+            </button>
+        </div>
+    </header>
+
+    <div class = "form-cont" id="rent">
+        <h1>Бронирование комнаты</h1>
+        <form>
+           <div class="container">
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" id="surname" placeholder="Фамилия">
+                    <label for="surname">Фамилия</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" id="name" placeholder="Имя">
+                    <label for="name">Имя</label>
+                </div>
+                <div class="form-floating mb-4 custom-select-wrapper">
+                    <input type="text" class="form-control" id="roomField" placeholder="Выберите комнату" readonly value=" ">
+                    <label for="roomField">Выберите комнату</label>
+                    <img src="src/img/rent/arrow.svg" alt="стрелка вниз" class="select-arrow">
+                    <div class="custom-select-dropdown">
+                        <div class="dropdown-header">
+                            <span>Выберите комнату</span>
+                            <img src="src/img/rent/arrow.svg" alt="стрелка вверх" class="header-arrow">
+                        </div>
+                        <ul>
+                            <li>Амфитеатр</li>
+                            <li>Чулан</li>
+                            <li>Двушка</li>
+                            <li>Студия</li>
+                            <li>Мачо Дача Хата Хаус</li>
+                            <li>Палата</li>
+                            <li>Берлога</li>
+                            <li>Каморка</li>
+                            <li>Всё антикафе</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-floating mb-4 custom-calendar-wrapper">
+                    <input type="text" class="form-control" id="dateField" placeholder="ДД.ММ.ГГ" readonly value="ДД.ММ.ГГ">
+                    <label for="dateField">Дата</label>
+                    <img src="src/img/rent/arrow.svg" alt="стрелка вниз" class="calendar-arrow">
+                    <div class="custom-calendar">
+                        <div class="calendar-header">
+                            <button class="prev-month">&lt;</button>
+                            <span class="month-name">Декабрь 2025</span>
+                            <button class="next-month">&gt;</button>
+                        </div>
+                        <div class="calendar-grid">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mb-5">
+                    <input type="tel" class="form-control" id="phone" placeholder="Номер телефона">
+                    <label for="phone">Номер телефона</label>
+                </div>
+            </div>
+        </form>
+        <div class = "as">
+            <a href="rooms.html#rooms">Подробнее о правилах бронирования</a>
+            <a href="#">Пользовательское соглашение</a>
+        </div>
+        <button class="rent-btn">
+            Забронировать
+        </button>
+        
+    </div>
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-content">
+            <div id="footer-social">
+                <img src="src/img/main-img/vk.svg" alt="Мы в VK">
+                <img src="src/img/main-img/tg.svg" alt="Мы в TG">
+                <img src="src/img/main-img/ig.svg" alt="Мы в IG">
+                <p>— наши соцсети</p>
+            </div>
+            <div id="footer-orgs">
+                <p>ОГРН/ОГРНИП: 02044023459 </p>
+                <p>ИНН: 503-5-35-5</p>
+                <p>ИП Иванов Иван Иванович</p>
+            </div>
+            <p>Фронтир &copy; 2025</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

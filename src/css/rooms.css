@@ -1,0 +1,60 @@
+.reserv {
+    display: flex;
+    margin-top: 10rem;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20% 0 20%;
+
+}
+
+.reserv h1{
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+    color: var(--acc);
+}
+h5 {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+    color: var(--text-acc);
+}
+
+.room{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    grid-auto-rows: min-content;
+    /* менять фон кнопки + в прототип добавить */
+}
+
+.room .title-room {
+    grid-column: 1 / -1; /* с 1 и до конца */
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.room .photo {
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.room img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.room ul {
+    list-style: "- ";
+    list-style-position: inside;
+}
